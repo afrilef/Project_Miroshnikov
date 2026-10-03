@@ -1,9 +1,13 @@
-chislo = int(input('введите трехзначное число: '))
+try:
+   chislo = int(input('введите трехзначное число: ')) # ввод числа
 
-edinichki = chislo % 10
-desatki = (chislo // 10) % 10
-sotni = chislo // 100
+   edinichki = chislo % 10 # где единицы
+   desatki = (chislo // 10) % 10 #где десятки
+   sotni = chislo // 100 #где сотни
 
-obratnoe_chislo = edinichki * 100 + desatki * 10 + sotni
+   obratnoe_chislo = edinichki * 100 + desatki * 10 + sotni # обратная запись
 
-print('результат:', obratnoe_chislo)
+   print('результат:', obratnoe_chislo) # вывод обратного числа
+except ValueError: 
+   print('ошибка, введите число') #при некорректном вводе
+  
