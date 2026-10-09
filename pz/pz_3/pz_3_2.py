@@ -3,20 +3,38 @@
 # по возрастанию, то удвоить их; в противном случае заменить значение каждой
 # переменной на противоположное. Вывести новые значения переменных A, B, C.
 
-try:
-    A = float(input('Введите число A: '))
-    B = float(input('Введите число B: '))
-    C = float(input('Введите число C: '))
+A = input('Введите число A: ') # Ввод A
+while not type(A) == float:    # проверка типа A
+    try:
+        A = float(A)
+    except ValueError:
+        print('Ошибка, введите число! ')
+        A = input('Введите число: ')
 
-    if A < B < C:
-        A = A*2
-        B = B*2
-        C = C*2
-    else:
-        A = -A
-        B = -B
-        C = -C
+B = input('Введите число B: ') # Ввод C
+while not type(B) == float:    # проверка типа B
+    try:
+        B = float(B)
+    except ValueError:
+        print('Ошибка, введите число! ')
+        B = input('Введите число: ')
 
-    print('Новые Значения: ', A, B, C)
-except ValueError:
-    print('Ошибка, Введите число')
+C = input('Введите число C: ') # ввод C
+while not type(C) == float:    # проверка типа C
+    try:
+        C = float(C)
+    except ValueError:
+        print('Ошибка, введите число! ')
+        C = input('Введите число: ')
+
+if A < B < C: # удвоение при возрастании
+    A = A*2
+    B = B*2
+    C = C*2
+else:         # противоположные значения
+    A = -A
+    B = -B
+    C = -C
+
+print('Новые Значения: ', A, B, C) # вывод результата
+
