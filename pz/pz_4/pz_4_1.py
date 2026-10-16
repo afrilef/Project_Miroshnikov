@@ -21,3 +21,4 @@ for i in range(1, N + 1): # цикл нахождния суммы
     suma += 1 / factorial
 
 print('Приближенное значение e: ', suma)
+
