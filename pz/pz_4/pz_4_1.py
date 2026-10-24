@@ -19,7 +19,7 @@ factorial = 1
 k = 1
 
 while k < N: # цикл нахождния суммы
-    factorial *= k # i! умножением прошлого факториала на i
+    factorial *= k # переприсваивание факториала
     suma += 1 / factorial
     k += 1
 
