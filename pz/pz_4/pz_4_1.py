@@ -20,7 +20,7 @@ k = 1
 
 while k < N: # цикл нахождния суммы
     factorial *= k # переприсваивание факториала
-    suma += 1 / factorial
+    suma += 1 / factorial # по формуле
     k += 1
 
 print('Приближенное значение e: ', suma)
