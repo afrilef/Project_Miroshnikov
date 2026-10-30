@@ -8,7 +8,7 @@ while not type(A) == float:    # проверка типа A
     try:
         A = float(A)
     except ValueError:
-        print('Ошибка, введите число! ')
+        print('Ошибка, введите число!')
         A = input('Введите число: ')
 
 B = input('Введите число B: ') # Ввод C
@@ -16,7 +16,7 @@ while not type(B) == float:    # проверка типа B
     try:
         B = float(B)
     except ValueError:
-        print('Ошибка, введите число! ')
+        print('Ошибка, введите число!')
         B = input('Введите число: ')
 
 C = input('Введите число C: ') # ввод C
@@ -24,7 +24,7 @@ while not type(C) == float:    # проверка типа C
     try:
         C = float(C)
     except ValueError:
-        print('Ошибка, введите число! ')
+        print('Ошибка, введите число!')
         C = input('Введите число: ')
 
 if A < B < C: # удвоение при возрастании
