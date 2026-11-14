@@ -4,11 +4,11 @@
 # параметра являются вещественными). С помощью этой функции найти третьи
 # степени пяти данных чисел.
 
-def PowerA3(A, B = 0.0):
-    B = A ** 3
+def PowerA3(A):
+    B = A ** 3 #в третью степень
     return B
 
-count = 1
+count = 1 #счетчик
 while count <= 5:
     number = input('Введите число: ')  # Ввод числа
     while not type(number) == float:  # проверка типа
@@ -17,7 +17,6 @@ while count <= 5:
         except ValueError:
             print('Ошибка, введите число! ')
             number = input('Введите число: ')
-    result = 0.0
-    result = PowerA3(number, result)
-    print('Третья степень:', result)
+    result = PowerA3(number) #в result записывает число в степени
+    print('Третья степень:', result) #выводит
     count += 1

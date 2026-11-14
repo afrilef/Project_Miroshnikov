@@ -3,18 +3,17 @@
 # строке 1 звездочка, во второй - 2, в третьей -3, ..., в строке с номером m - m звездочек.
 
 def star(M):
-    m = 0
-    while m <= M:
-        print('*' * m)
+    m = 1 #счетчик
+    while m <= M: #условие
+        print('*' * m) #вывод звездочек
         m += 1
-    return 0
 
 M = int(input('Введите кол-во строчек звездочки: '))  # Ввод числа
 while not type(M) == int:   # проверка типа
     try:
         M = int(M)
-    except ValueError:
+    except ValueError: #при ошибке
         print('Ошибка, введите число! ')
         M = input('Введите число: ')
 
-print(star(M))
+star(M)
